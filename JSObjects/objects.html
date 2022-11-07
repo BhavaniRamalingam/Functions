@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>objects</title>
+    </head>
+    <body>
+        <script>
+            let car={
+                name:"Benz",
+                price:"5o lac",
+            };
+            let choice=prompt("you are looking for car's name or price ?","name");
+            alert(car[choice]);
+
+            let game={
+                name:"cricket",
+                players:"11",
+            }
+            let team=prompt("You are looking for game name or players?","players");
+            let ans=game[team];
+            alert(ans);
+            
+            let user={
+                name:"john",
+                age:25,
+                isAdmin:true,
+            };
+            for(let key in user){
+                alert(key);
+                alert(user[key]);
+            }
+            //Ordered in object
+            let marks={
+                "55":"science",
+                "45":"maths",
+                "35":"social",
+                "1":"1"
+            };
+            for(let mark in marks){
+                alert(mark);
+                alert(marks[mark]);
+            }
+            //Copying object
+            let cart={
+                product:"food",
+                amount:"500",
+            };
+            let copy=cart;
+            alert(copy.product);
+            //Comparison
+            let a={};
+            let b=a;
+            alert(a==b);
+
+            let student={
+                name:"Bharath",
+                age:"25",
+                Qual:"BE",
+            };
+            let clone={};
+            for(let key in student){
+                clone[key]=student[key];
+            }
+            clone.name="Ashok";
+            alert(student.name);
+            alert(clone.name);
+        </script>
+    </body>
+</html>

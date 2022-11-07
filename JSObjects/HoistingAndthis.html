@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Hoisting</title></head>
+    <body>
+        <script>
+        
+           function isCorrect(){
+              if(true){
+               var result="correct";
+              }
+            alert(result);
+
+            alert(person);
+            var person="Bhavani";
+            alert(person);
+           }
+           isCorrect();
+
+           (function(){
+            var message="this is bhavani"
+             alert(message);
+           })();
+
+           let tree={
+            name:"apple",
+            origin:"India"
+           };
+           
+           tree.flavour=function(){
+            alert("sweet");
+            alert(`${this.name}`);
+           };
+           tree.flavour();
+           
+           let myself={name:"Bhava"};
+           let myfriend={name:"Kavi"};
+           function rename(){ 
+            alert(this.name);
+           }
+           myself.c=rename;
+           myfriend.c=rename;
+           myself.c();
+           myfriend.c();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>start</title>
+    </head>
+    <body>
+        <script>
+            let userkey=prompt("When you started walking?");
+            if(userkey>2021) 
+            {
+                alert("Welcome!");
+                alert("Fresher");
+            }else if(userkey>2018)
+            {
+                alert("Welcome Beginner!");
+            }
+            else alert("Hey! Expert!");
+            let message=(userkey==2022)? 'Starting your career':
+            (userkey<2022)? 'Already started your career':
+            'Its not a valid age';
+            alert(message);
+            
+        </script>
+    </body>
+</html>
