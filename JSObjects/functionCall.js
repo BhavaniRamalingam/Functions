@@ -26,3 +26,4 @@ const detail = {
   }
   
   document.getElementById("demo1").innerHTML=detail.fullName.call(detail1, "Oslo", "Norway");
+  

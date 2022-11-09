@@ -4,7 +4,6 @@ function Apple(origin){
     this.color="Red";
 }
 let fruit=new Apple("India");
-document.getElementById("demo").innerHTML=fruit.taste;
 alert(fruit.origin);
 alert(fruit.taste);
 
