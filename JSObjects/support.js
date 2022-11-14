@@ -1,0 +1,11 @@
+document.querySelector('button').addEventListener('click',()=>{
+    let xhr=new XMLHttpRequest(); //0
+    xhr.open("GET","support.txt",true);//1
+    xhr.onreadystatechange=function(){
+        console.log(xhr.readyState);//2,3,4
+        if(xhr.readyState==4 && xhr.status==200){
+            console.log(xhr.responseText)
+        }
+    }
+    xhr.send()
+});
